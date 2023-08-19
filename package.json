@@ -1,0 +1,27 @@
+{
+  "name": "css-formatter",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "lint:prettier": "prettier --write src\"/**/*.+(js|ts|tsx|jsx|json|md|json)\"",
+    "lint:style": "stylelint src\"/**/*.+(css|scss|less|stylus|sass|postcss)\" --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.2",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "prettier-plugin-packagejson": "^2.4.5",
+    "stylelint": "^15.10.3",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^10.0.0",
+    "stylelint-order": "^6.0.3",
+    "stylelint-prettier": "^4.0.2",
+    "stylelint-scss": "^5.1.0"
+  }
+}
