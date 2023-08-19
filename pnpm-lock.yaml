@@ -38,6 +38,9 @@ devDependencies:
   stylelint-scss:
     specifier: ^5.1.0
     version: 5.1.0(stylelint@15.10.3)
+  typescript:
+    specifier: ^5.1.6
+    version: 5.1.6
 
 packages:
 
