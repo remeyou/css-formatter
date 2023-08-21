@@ -1,4 +1,10 @@
+@mixin base {
+  width: 100vw;
+}
+
 body {
+  @include base;
+
   display: initial;
   width: initial;
   font-size: initial;
