@@ -1,23 +1,23 @@
 module.exports = {
+  root: true,
   extends: [
-    'stylelint-config-standard',
-    'stylelint-config-standard-scss',
+    'stylelint-config-recommended',
+    'stylelint-config-html',
     'stylelint-config-recommended-less',
+    // comment next line to resolve conflicting with less
+    // 'stylelint-config-recommended-scss',
+    'stylelint-config-recommended-vue',
     'stylelint-config-rational-order',
     'stylelint-prettier/recommended',
   ],
-  plugins: [
-    'stylelint-scss',
-    'stylelint-order',
-    'stylelint-config-rational-order/plugin',
-  ],
+  plugins: ['stylelint-order'],
   overrides: [
     {
-      files: ['**/*.(less|css|vue|html)'],
+      files: ['**/*.(less|vue)'],
       customSyntax: 'postcss-less',
     },
     {
-      files: ['**/*.(sass|scss|css|vue|html)'],
+      files: ['**/*.(sass|scss|vue)'],
       customSyntax: 'postcss-scss',
     },
     {
@@ -25,6 +25,7 @@ module.exports = {
       customSyntax: 'postcss-html',
     },
   ],
-
-  rules: {},
+  rules: {
+    'less/no-duplicate-variables': null,
+  },
 };
