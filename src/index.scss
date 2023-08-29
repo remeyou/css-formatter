@@ -1,11 +1,11 @@
-@mixin base {
-  width: 100vw;
+@mixin w-100 {
+  width: 100%;
 }
 
-body {
-  @include base;
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  display: initial;
-  width: initial;
-  font-size: initial;
+  @include w-100;
 }
