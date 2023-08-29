@@ -27,5 +27,6 @@ module.exports = {
   ],
   rules: {
     'less/no-duplicate-variables': null,
+    'function-no-unknown': null,
   },
 };
